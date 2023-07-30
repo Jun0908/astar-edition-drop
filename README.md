@@ -18,6 +18,22 @@ Run this command from the terminal to clone this project:
 npx thirdweb create --template edition-drop
 ```
 
+```bash
+// This is the chainId your dApp will work on.
+const activeChainId = ChainId.Goerli;
+```
+
+```bash
+// Put Your Edition Drop Contract address from the dashboard here
+const myEditionDropContractAddress = "<smart-contract-address-here>";
+// Put your token ID here
+const tokenId = 0;
+```
+
+```bash
+npm run dev
+```
+
 ### 1. Deploy Your Own Edition Drop on thirdweb
 
 Head to the [dashboard](https://thirdweb.com/dashboard) and create your own **Edition Drop** contract.
@@ -26,34 +42,3 @@ You can learn how to do that with our guide [Release an NFT drop on your own sit
 
 Be sure to configure a **name**, **description**, and **image** for your NFT drop in the dashboard.
 
-### 2. Configure the styles to your branding
-
-You can fully customize the colors and style of this template by editing the values in the [`globals.css`](/styles/globals.css) file.
-
-You can configure:
-
-- The color of the background with `--background-color`
-- The color of the text with `--text-color`
-- The color of the button (is a gradient from primary to secondary color) with `--color-primary` and `--color-secondary`
-- The font with `--font`
-- The border colors with `--border-color`
-
-### 3. Plug in your Edition Drop contract address
-
-Replace the value of the `myEditionDropContractAddress` inside [`yourDetails.ts`](/const/yourDetails.ts) with your Edition Drop contract address you can find in the dashboard.
-
-Replace the value of the `tokenId` inside [`yourDetails.ts`](/const/yourDetails.ts) with your tokenId.
-
-
-### 4. Configure Your Network
-
-Inside [`_app.tsx`](/pages/_app.tsx) you can configure the network you want to use:
-
-```jsx
-// This is the chain your dApp will work on.
-const activeChain = "mumbai";
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our Discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
