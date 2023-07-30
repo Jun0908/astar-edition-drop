@@ -19,8 +19,7 @@ npx thirdweb create --template edition-drop
 ```
 
 ```bash
-// This is the chainId your dApp will work on.
-const activeChainId = ChainId.Goerli;
+import { Astar } from "@thirdweb-dev/chains";
 ```
 
 ```bash
